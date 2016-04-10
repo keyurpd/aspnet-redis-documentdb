@@ -1,0 +1,6 @@
+{
+  "name": "AspNetRedisDocumentDb",
+  "tagline": "ASP.NET Core website with Redis Cache and DocumentDb of Azure",
+  "body": "# ASP.NET Core Sample Website\r\n\r\n> Note: This code tries to connect to Azure DocumentDb and Redis services.\r\n> Kindly create/replace the connection strings in config.json file.\r\n> Or use environment variables.\r\n\r\nThis is a sample asp.net web application targetting the .NET Core runtime.\r\n\r\nFollowing are the steps to be followed.\r\n - Install .NET Core 1.0 / .NET 4.5.1\r\n - Install Node, NPM, Yeoman\r\n - Install ASP.NET generator for Yeoman\r\n - Create the first ASP.NET web app using Yeoman scaffolding\r\n - Change the code to meet the requirement\r\n - Run one of the web commands to bring the site up\r\n - Browse the site through the browser\r\n\r\nIt uses following features of ASP.NET Core\r\n - Targets ASP.NET Core rc1 update1, except Redis and DocumentDb API\r\n - Uses built-in ASP.NET Dependency Injection\r\n - Uses new Option Model / Env Vars instead of web.config\r\n - Retrieves data from Azure DocumentDb\r\n - Uses Cache-Aside strategy for caching in Redis\r\n\r\n(C) Keyur",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
