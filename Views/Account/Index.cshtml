@@ -1,0 +1,34 @@
+@model List<Account>
+@{
+    ViewData["Title"] = "Accounts";
+}
+<h1>Accounts</h1>
+<h2>@ViewData["Message"]</h2>
+<table border="1" cellpadding="6">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Type</th>
+        <th>Agency</th>
+        <th>Employees</th>
+    </tr>
+    @for (int i = 0; i < Model.Count; i++ )
+    { 
+        <tr>
+            <td>@Html.Label("acc[" + @i + "].Id", 
+                                Model[i].Id)</td>
+            <td>@Html.Label("acc[" + @i + "].Name", 
+                                Model[i].Name)</td>
+            <td>@Html.Label("acc[" + @i + "].City", 
+                                Model[i].City)</td>
+            <td>@Html.Label("acc[" + @i + "].Type", 
+                                Model[i].Type)</td>
+            <td>@Html.Label("acc[" + @i + "].Agency", 
+                                Model[i].Agency)</td>
+            <td>@Html.Label("acc[" + @i + "].Employees", 
+                                Model[i].Employees)</td>
+        </tr>
+    }
+
+</table>
